@@ -9,12 +9,12 @@ inputs:
   training_data:
     type: uri_file
     path: diabetes-data@latest
-  reg_rate: 0.05
+  reg_rate: 0.01
 outputs:
   metrics_output:
     type: uri_folder
 environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu@latest
 compute: azureml:aml-cluster
-experiment_name: diabetes-training
+experiment_name: diabetes-trainingwith-0.01
 display_name: diabetes-train-command
 description: diabetes training job
